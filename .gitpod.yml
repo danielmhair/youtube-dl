@@ -1,6 +1,5 @@
 tasks:
   - name: Youtube Download
     before: |
-      sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-      sudo chmod a+rx /usr/local/bin/youtube-dl
-    command: echo "Run 'youtube-dl <youtube-link>'"
+      pip install yt-dlp
+    command: echo "Run 'yt-dlp <youtube-link>'"
