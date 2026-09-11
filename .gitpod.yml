@@ -2,4 +2,4 @@ tasks:
   - name: Youtube Download
     before: |
       pip install yt-dlp
-    command: echo "Run 'yt-dlp --extract-audio --audio-format mp3 --yes-playlist <youtube-playlist-url-link>'"
+    command: echo "Run 'yt-dlp --extract-audio --audio-format mp3 --yes-playlist <youtube-playlist-url-link>'" && echo 'OR 'yt-dlp --extract-audio --audio-format wav --extractor-args "youtube:player_client=android" -P "C:\ytdl-temp" "<link>"'
